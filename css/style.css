@@ -1,0 +1,50 @@
+#container{
+        background-color: rgb(251, 252, 250);
+        height: 50px;
+        width: 100%;
+        margin: auto;
+        color: green;
+    }
+h1{
+    margin-left:5%;
+}
+span{
+    float: left;
+    margin-left: 5px;
+    font-size: 30px;
+    padding: 8px 25px ;
+    font-family:timesnewroman;
+    color: black;
+}
+b{
+    font-size: 20px;
+margin-right: 100px;
+float: right!important;
+padding: 6px;
+}
+
+button{
+    float: right!important;  
+     margin-right: -568px;
+    font-size: 10px;
+    padding: 8px 25px ;
+   
+}
+
+
+#header{
+    background-color:grey;
+    height: 50px;
+    width: 100%;
+}
+#header ul{
+float: left;
+margin-left: -364px;
+
+}
+#header ul li{
+    display: inline;
+    margin-left: 50px;
+    text-align:left;
+    padding: 5px 0px 5px 10px ;
+}   
