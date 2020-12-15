@@ -18,19 +18,24 @@ span{
 }
 b{
     font-size: 20px;
-    margin-right: 250px;
+    margin-right: 350px;
     float: right!important;
     padding: 6px;
 }
 
-button1 {
-    border: 1px solid green; 
-    color: rgb(5, 5, 5); 
-    margin-right: 250px;
-    float: right;
- }
+.button1{
+    float: right!important;
+    margin-right: -780px;
+    font-size: 10px;
+    padding: 8px 25px; 
+}
+.button2{
+    float: right!important;
+    margin-right: -680px;
+    font-size: 10px;
+    padding: 8px 25px;
 
-
+}
 #header{
     background-color:grey;
     height: 50px;
@@ -39,7 +44,6 @@ button1 {
 #header ul{
 float: left;
 margin-left: -364px;
-
 }
 #header ul li{
     display: inline;
@@ -54,3 +58,10 @@ li select{
     border: none;
     font-style: 15px;
 }
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color:rgb(92, 92, 92);
+    color: white;
+  }
