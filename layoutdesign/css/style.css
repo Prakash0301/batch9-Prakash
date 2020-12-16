@@ -1,0 +1,62 @@
+.button1{
+    float: right!important;
+    margin-right: 780px-;
+    font-size: 13px;
+    padding: 8px 25px; 
+}
+.button2{
+    float: right!important;
+    margin-right: 11px;
+    font-size: 13px;
+    padding: 8px 25px;
+}
+body h2{
+    text-align: center;
+    background-color: gray;
+    padding: 5px;
+    color: green;
+}
+body h3{
+    text-align: center;
+    font-size: 30px;
+
+}
+body article{
+    text-align: left;
+    padding: 20px;
+    font-size: 20px;
+    font-family: tahoma;
+    margin-right: 10px;
+}
+.nav1 {
+    float: left;
+    width:10%;
+    height: 464px; 
+    background: rgb(124, 123, 123);
+    padding: 20px;
+}
+.nav1 ul {
+    list-style-type: none;
+    padding: 29px 33px;
+}
+.nav2 {
+    float: right;
+    width:10%;
+    height: 464px; 
+    background: rgb(124, 123, 123);
+    padding: 20px;
+    font-size: 25px;
+}
+.nav2 ul {
+    list-style-type: none;
+    padding: 29px 33px;
+    text-align: center;
+}
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-style: italic;
+    font-size: 25px;
+  }
