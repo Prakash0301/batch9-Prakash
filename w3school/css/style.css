@@ -1,0 +1,144 @@
+.head1{
+    color: green;
+    font-size: 30px;
+    font-family: 'Times New Roman';
+    margin-left: 40px;
+    font-family:fantasy;
+}
+button {
+    padding: 7px 28px;
+    margin-right: 20px;
+    margin-top: 17px;
+    float: right;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: bold;
+    background-color: rgb(11, 243, 11);
+}
+button:hover {
+    background-color: rgb(59, 10, 238);
+
+}
+
+
+
+.head2{
+    float: right;
+    margin-right: 35px;
+    margin-top: 20px;
+    color: rgb(0, 26, 255);
+    font-size: 25px;
+}
+ul {
+    list-style-type: none;
+    margin: 5px;
+    padding: 7px;
+    font-size: 25px;
+    background-color: gray;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: bold;
+    padding-right: 20px;
+    width: 100%;
+    margin-left: -5px;
+    position: fixed;
+
+  }
+  
+ul li {
+    display: inline;
+    padding-top: 10px;
+    margin: 10px;
+    
+  }
+
+ ul :hover
+ {
+    background-color: rgb(8, 124, 18);
+ } 
+ul i{
+    padding: 20px;
+    width: 20px;
+    height: 10px;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.sidenav1 {
+    height:632px;
+    width: 188px;
+    position: fixed;
+    z-index: 1;
+    top: 137px;
+    left: 04px;
+    background-color: gray;
+    color: black;
+    overflow-x: hidden;
+    padding-top: 20px;
+    overflow-y: scroll;
+  }
+  
+  .sidenav1 a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #0a0a0a;
+    display: block;
+  }
+
+  .sidenav1 a:hover
+{
+    color: #f8f0f0;
+  }
+
+  .sidenav2 a:hover
+{
+    color: #f8f0f0;
+  }
+.main{
+    text-align: left;
+    width: 80%;
+    margin: 90px;
+    margin-left: 217px;
+    font-weight: bold;
+    font-size: 20px;   
+}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color:rgb(92, 92, 92);
+    color: white;
+  }
+
+.main p {
+    background-color: rgb(245, 242, 239);
+    color: black;
+  }
+  
+  
+  @media screen and (max-width: 992px) {
+    body {
+      background-color: blue;
+      color: white;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    body {
+      background-color: olive;
+      color: white;
+    }
+  }
