@@ -1,10 +1,12 @@
 //create array
+
 var favcolors = ["red", "white", "black"]
 favcolors[4] = "yellow"
 favcolors[5] = "50"
 console.log(favcolors);
 
 //create a object
+
 var person = {
     name: "shankar",
     age: 25,
@@ -24,6 +26,7 @@ else {
 }
 
 //If, else-if statement
+
 var whoIsHere = 'not anyone'
 if (whoIsHere == 'student') {
     console.log('hi i am a student');
@@ -98,8 +101,7 @@ switch (grade) {
 
 // continue statement
 
-for (var i = 0; i < 6; i++) 
-{
+for (var i = 0; i < 6; i++) {
     if (i == 3)
         continue;
     console.log("EvenNumber#", i);

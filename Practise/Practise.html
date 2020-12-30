@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practise Assignment</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            h1{
+                text-align: center;
+                font-size: 40px;
+            }
+            .table{
+                padding-left: 10px;
+            }
+            td,th{
+                padding:5px;
+            }
+            h2{
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            Assignment
+        </h1>
+        
+        <h2>Student Details</h2>
+        <br>
+
+        <span class="one">Name 1</span>
+        <span class="two">Name 2</span>
+        <span class="three">Name 3</span>
+
+        <input id="firstname"  name="fname" placeholder="Enter First Name"/>
+        <input id="lastname"  name="lname" placeholder="Enter Last Name"/>
+            <table class="student">
+                <thead class="table">
+                    <tr>
+                        <th>Name</th>
+                        <th>Education</th>
+                        <th>Age</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Naveen</td>
+                        <td>Bcom</td>
+                        <td>21</td>
+                    </tr>
+
+                    <tr>
+                        <td>john</td>
+                        <td>BCA</td>
+                        <td>21</td>
+                    </tr>
+
+                    <tr>
+                        <td>Vionth</td>
+                        <td>BE</td>
+                        <td>21</td>
+                    </tr>
+                </tbody>
+                </table>
+
+                <label for="gender">Gender:</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>  
+                <input type="radio" id="male" name="gender" value="others">
+                <label for="others">Others</label><br>
+
+                <label>Select Education :</label>
+                <select id="education" name="education">
+                    <option value="select">SELECT</option>
+                    <option value="BE">BE (Computer Science)</option>
+                    <option value="Bcom">Bcom</option>
+                    <option value="java">Java</option>
+                    <option value="BCA">BCA</option>
+                </select>
+                <br>
+
+                <label>1st year : <input type="checkbox" id="mycheck"></label><br>
+                <label>2nd year : <input type="checkbox" id="mycheck"></label><br>
+                <label>3rd year : <input type="checkbox" id="mycheck"></label>
+                <br>
+                <input type="submit" class="btn btn-info" value="Submit">
+            
+
+    </body>
+    
+    <script type="text/javascript">
+
+       $(".two").each(function (){
+           if($(this).text() == "Name 2"){
+               $(this).html("<b>" +$(this).text() + "</b>")
+           }
+       })
+
+       $("[type='radio']").val() //value of the radio button.
+
+       $("[type='male']").val("gents")  //change the value of the selected type.
+
+       $("[value='BE']").val() //this value changed but the value doesn't show. It will show undefined.
+
+       $("[id='mycheck']").val() //get the element in checkbox.
+
+       $("[id='mycheck']").val("single") //change the value in checkbox.
+
+       $("#firstname").val()    //get the elements in text box.
+
+       $("#firstname").val("Naveen")    //change the elements in textbox.
+
+
+    </script>
+    
+</html>

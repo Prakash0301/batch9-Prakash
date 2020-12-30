@@ -1,0 +1,41 @@
+.button1 {
+    padding: 7px 28px;
+    margin-right: 20px;
+    margin-top: 17px;
+    float: right;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: bold;
+    background-color:rgb(128, 214, 16);
+}
+.button1:hover {
+    background-color:  rgb(10, 238, 40);
+}
+.button2 {
+    padding: 7px 28px;
+    margin-right: 20px;
+    margin-top: 17px;
+    float: right;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: bold;
+    background-color: rgb(128, 214, 16);
+}
+.button2:hover {
+    background-color: rgb(10, 238, 40);
+}
+b{
+    font-size: 30px;
+}
+.container2{
+    margin-left: 25px;
+
+}
+.button3{
+    margin-left: 50px;
+}
+.button3:hover {
+    background-color: rgb(10, 238, 40);
+}
