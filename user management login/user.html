@@ -1,71 +1,74 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Header design</title>
-        <link rel="stylesheet" type="text/css" href="style.css"/>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<html>  
+
+<head>
+  <title>Header design</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .hide {
+      display: none;
+    }
+  </style>
 </head>
+
 <body>
-    <b> USER MANAGEMENT LOGIN</b>
-<div id="container">
-    <button type="button" class="btn btn-warning"onclick="switchForms('LOGIN')">LOGIN</button>
-    <button type="button" class="btn btn-warning"onclick="switchForms('CreateAccount')">CreateAccount</button>
-</div>
-
- <div class="container2">
-    <h2>Login Form</h2>
-    <form>
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" class="form-control" id="email" placeholder="Enter email">
-      </div>
-      <div class="form-group">
-        <label for="pwd">Password:</label>
-        <input type="password" class="form-control" id="pwd" placeholder="Enter password">
-      </div>
-      <div class="checkbox">
-        <label><input type="checkbox"> Remember me</label>
-      </div>
-      <br>
-      <div class="text-center">
-        <button type="button" class="btn btn-warning" onclick="login">Login</button>
+  <b> USER MANAGEMENT LOGIN</b>
+  <div class="jumbotron">
+    <div class="pull-right">
+      <button type="button" class="btn btn-warning" onclick="switchForms('LOGIN')">LOGIN</button>
+      <button type="button" class="btn btn-warning" onclick="switchForms('CreateAccount')">CreateAccount</button>
     </div>
- </form>
-</div>
+    <h2 id="pagetitle">Login Form</h2>
+    <div class="container" id="loginform">
+      <form>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox"> Remember me</label>
+        </div>
+        <br>
+        <div class="text-center">
+          <button type="button" class="btn btn-warning" onclick="login">Login</button>
+        </div>
+      </form>
+    </div>
 
-<div class="container hide" id="CreateAccount">
-    <form>
-      <div class="form-group">
-        <label for="FirstName">FirstName:</label>
-        <input type="FirstName" class="form-control" id="FirstName" placeholder="Enter FirstName">
-      </div>
-      <div class="form-group">
-        <label for="LastName">Password:</label>
-        <input type="LastName" class="form-control" id="LastName" placeholder="Enter LastName">
-      </div>
-      <div class="form-group">
-        <label for="Password">Password:</label>
-        <input type="Password" class="form-control" id="Password" placeholder="Enter Password">
-      </div>
-      <div class="form-group">
-        <label for="Age">Password:</label>
-        <input type="Age" class="form-control" id="Conform password" placeholder="Enter a Age">
-      </div>
-      <div class="form-group">
-        <label for="LastName">Password:</label>
-        <input type="LastName" class="form-control" id="LastName" placeholder="Enter LastName">
-      </div>
-      <div class="form-group">
-        <label for="LastName">Password:</label>
-        <input type="LastName" class="form-control" id="LastName" placeholder="Enter LastName">
-      </div>
- </form>
-</div>
-<script scr="new.js">
+    <div class="container" style="display: none;" id="CreateAccount">
+      <form>
+        <div class="form-group">
+          <label for="Name">FirstName:</label>
+          <input type="FirstName" class="form-control" id="FirstName" placeholder="Enter FirstName">
+        </div>
+        <div class="form-group">
+          <label for="Name">Password:</label>
+          <input type="LastName" class="form-control" id="LastName" placeholder="Enter LastName">
+        </div>
+        <div class="form-group">
+          <label for="Pwd">Password:</label>
+          <input type="Password" class="form-control" id="Password" placeholder="Enter Password">
+        </div>
+        <div class="text-center">
+          <button type="button" class="btn btn-warning" onclick="CreateAccount">CreateAccount</button>
+        </div>
+      </form>
+    </div>
+  </div>  
 
-</script>
+
+
+  <script src="new.js">
+
+  </script>
+
 </body>
 
 </html>
