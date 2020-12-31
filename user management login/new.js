@@ -8,12 +8,30 @@ function CreateAccount(){
 
 }
 function validateForm() {
-    var x = document.forms["form-group"]["fname"].value;
-    if (x == "") {
-      alert("Name must be filled out");
+    var email = document.forms["myForm"]["email"].value;
+    if (email == "") {
+      alert("Name must be filled email");
+      return false;
+    }
+    var password = document.forms["myForm"]["password"].value;
+    if (password == "") {
+      alert("Name must be filled password");
       return false;
     }
   }
+  function validatecreateaccount() {
+    var firstname = document.forms["myaccountForm"]["firstname"].value;
+    if (firstname == "") {
+      alert("Name must be filled firstname");
+      return false;
+    }
+    var lastname = document.forms["myaccountForm"]["lastname"].value;
+    if (lastname == "") {
+      alert("Name must be filled lastname");
+      return false;
+    }
+  }
+  
 function switchForms(formType){
 
     if (formType == "login"){
