@@ -8,7 +8,7 @@ function CreateAccount(){
 
 }
 function switchForms(formType){
-	alert(formType);
+
     if (formType == "login"){
         $("#pagetitle").text("loginform");
         // $("#loginform").removeclass("hide");
