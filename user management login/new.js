@@ -7,6 +7,13 @@ function CreateAccount(){
     debugger;
 
 }
+function validateForm() {
+    var x = document.forms["form-group"]["fname"].value;
+    if (x == "") {
+      alert("Name must be filled out");
+      return false;
+    }
+  }
 function switchForms(formType){
 
     if (formType == "login"){
