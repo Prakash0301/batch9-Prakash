@@ -19,6 +19,7 @@ function validateForm() {
       return false;
     }
   }
+  var userList = [];
   function validatecreateaccount() {
     var firstname = document.forms["myaccountForm"]["firstname"].value;
     if (firstname == "") {
@@ -30,6 +31,52 @@ function validateForm() {
       alert("Name must be filled lastname");
       return false;
     }
+    var pwd = document.forms["myaccountForm"]["pwd"].value;
+    if (pwd == "") {
+      alert("Name must be filled pwd");
+      return false;
+    }
+    var ConfimPassword = document.forms["myaccountForm"]["ConfimPassword"].value;
+    if (ConfimPassword == "") {
+      alert("Name must be filled ConfimPassword");
+      return false;
+    }
+    var Email = document.forms["myaccountForm"]["Email"].value;
+    if (Email == "") {
+      alert("Name must be filled Email");
+      return false;
+    }
+    var gender = document.forms["myaccountForm"]["gender"].value;
+    if (gender == "") {
+      alert("Name must be filled gender");
+      return false;
+    }
+    var age = document.forms["myaccountForm"]["age"].value;
+    if (age == "") {
+      alert("Name must be filled age");
+      return false;
+    }
+    var FavoriteHero = document.forms["myaccountForm"]["FavoriteHero"].value;
+    if (FavoriteHero == "") {
+      alert("Name must be filled FavoriteHero");
+      return false;
+    }
+    
+var userDetails = {
+FirstName:firstname,
+LastName:lastname,
+Email:Email,
+password:pwd,
+Confimpassword:ConfimPassword,
+Age:age,
+Gender:gender,
+FavHero:FavoriteHero,
+IsAdmin:""
+}
+
+userList.push(userDetails);
+console.log(userList);
+return false;
   }
   
 function switchForms(formType){
