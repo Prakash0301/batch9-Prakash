@@ -95,4 +95,24 @@ function switchForms(formType){
         $("#loginform").hide();
         $("#CreateAccount").show();
     }
-}
+// }
+// var email = document.forms['myForm']['email']
+// var password = document.forms['myForm']['password']
+
+// var email_error = document.getElementById('email_error');
+// var password_error = document.getElementById('password_error');
+
+// function validated(){
+// if(email.value.length < 9){
+//    email.style.border = "1px solid red";
+//    email_error.style.display = "block"
+//    email.foucs();
+//    return false;
+// }
+// // if(password.value.length < 9){
+// //   password.style.border = "1px solid red";
+// //   password_error.style.display = "block"
+// //   password.foucs();
+// //   return false;
+// // }
+// }

@@ -19,3 +19,15 @@ b{
   text-align: right;
   margin-right: 10px;
 }
+.container #email_error,
+.container #password_error{
+    margin-top: 5px;
+    width: 300px;
+    font-size: 15px;
+    color: red;
+    background-color: salmon;
+    padding: 5px 8px;
+    border-radius: 3px;
+    border: 1px solid #EF9A9A;
+    display: none;
+}
