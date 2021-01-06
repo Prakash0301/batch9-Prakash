@@ -39,7 +39,7 @@
         </div>
         <div class="row pages createAccountPage hide">
             <div class="col-md-12">
-                <form class="createform" onsubmit="return validated()" method="POST">
+                <form name="createform" onsubmit="return validated()" method="POST">
                     <h2>Account Creating Form</h2>
                     <br>
                     <div class="form-group">
@@ -92,7 +92,7 @@
                         <input class="form-check-input admin" type="checkbox" id="admin" value="Admin">
                         
                     </div>
-                    <button type="button" class="btn btn-primary createAccount" onclick="createAccount()">CreateAccount</button>
+                    <button type="submit" class="btn btn-primary createAccount" onclick="createAccount()">CreateAccount</button>
                 </form>
             </div>
         </div>
