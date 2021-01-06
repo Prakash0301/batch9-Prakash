@@ -59,11 +59,11 @@
                     </div>
                     <div class="form-group">
                         <label for="password">Password</label>
-                        <input type="password" class="form-control" id="password" onkeypress="checkPass();" placeholder="Password"/>
+                        <input type="password" class="form-control" id="password" placeholder="Password"/>
                     </div>
                     <div class="form-group">
-                        <label for="confirm_password">ConfirmPassword <span id='message'></span> </label>
-                        <input type="password" class="form-control" id="confirm_password" onkeypress="checkPass();" placeholder="confirm_password"/>
+                        <label for="confirm_password">ConfirmPassword </label>
+                        <input type="password" class="form-control" id="confirm_password" onblur="checkPass();" placeholder="confirm_password"/>
                         </div>
                     <div class="form-group">
                         <label for="age">Age</label>
@@ -92,7 +92,7 @@
                         <input class="form-check-input admin" type="checkbox" id="admin" value="Admin">
                         
                     </div>
-                    <button type="submit" class="btn btn-primary createAccount" onclick="createAccount()">CreateAccount</button>
+                    <button type="submit" class="btn btn-primary createAccount">CreateAccount</button>
                 </form>
             </div>
         </div>

@@ -20,7 +20,7 @@
             lastName.focus();
             return false;
             }
-            if (userList.length !== 0 && userList.filter(x => x.email == $("#email").val()).length !== 0) {
+            if (usersList.length !== 0 && usersList.filter(x => x.email == $("#email").val()).length !== 0) {
                 window.alert("the email" + $("#email").val() + "already exist");
               } 
               else 
@@ -30,11 +30,11 @@
                     firstName: $("#firstName").val(),
                     lastName: $("#lastName").val(),
                     email: $("#email").val(),
-                    // password: $("#password").val(),
-                    // confirmpassword: $('#confirm_password').val(), 
-                    // age : $("#age").val(),
-                    // game: [],
-                    // isAdmin : $("#admin:checked").length === 1 ? true : false
+                    password: $("#password").val(),
+                    confirmpassword: $('#confirm_password').val(), 
+                    age : $("#age").val(),
+                    game: [],
+                    isAdmin : $("#admin:checked").length === 1 ? true : false
                 }
                 usersList.push(user);
                 userIdCount++;
@@ -48,14 +48,16 @@
             var userIdCount = 1;
             function checkPass(){
                 var pass  = document.getElementById("password").value;
-                var rpass  = document.getElementById("rpassword").value;
+                var rpass  = document.getElementById("confirm_password").value;
                if(pass != rpass){
-                   document.getElementById("submit").disabled = true;
-                   $('.missmatch').html("Entered Password is not matching!! Try Again");
-               }else{
-                   $('.missmatch').html("");
-                   document.getElementById("submit").disabled = false;
+                   alert("not matching");
+                //    document.getElementById("submit").disabled = true;
+                //    $('.missmatch').html("Entered Password is not matching!! Try Again");
                }
+            //    else{
+            //        $('.missmatch').html("");
+            //        document.getElementById("submit").disabled = false;
+            //    }
        }
             function createAccount(){
                 user = {
@@ -102,8 +104,9 @@
                                 "<a href='javascript:void(0)' onclick='openEditUserModal(this)'>Edit</a>   <a href='javascript:void(0)' onclick='deleteUser(this)'>Delete</a></td></tr>");
                             }
                         } else {
-                            $("#userListTable tbody").append("<tr><td>" + loggedInUserDetails.firstName + "</td><td>" + loggedInUserDetails.lastName + "</td><td>" + loggedInUserDetails.email + "</td><td>" + loggedInUserDetails.age + "</td><td></td></tr>");
-                            $("#welcomeMessage").text("Welcome " + loggedInUserDetails.firstName + " " + loggedInUserDetails.lastName);
+                            window.location.href="home.html";
+                            // $("#userListTable tbody").append("<tr><td>" + loggedInUserDetails.firstName + "</td><td>" + loggedInUserDetails.lastName + "</td><td>" + loggedInUserDetails.email + "</td><td>" + loggedInUserDetails.age + "</td><td></td></tr>");
+                            // $("#welcomeMessage").text("Welcome " + loggedInUserDetails.firstName + " " + loggedInUserDetails.lastName);
                         }
                         $(".logoutLink").removeClass("hide");
                         $(".loginLink").addClass("hide");
