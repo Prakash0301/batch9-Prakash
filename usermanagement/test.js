@@ -1,4 +1,6 @@
             var user = {};
+            var usersList = [];
+            var userIdCount = 1;
             var firstName = document.forms['createform']['firstName']
             var lastName = document.forms['createform']['lastName']
             
@@ -6,21 +8,43 @@
             var lastName_error = document.getElementById('lastName_error');
             
             function validated(){
-            if(email.value.length < 9){
-               email.style.border = "1px solid red";
-               email_error.style.display = "block"
-               email.foucs();
+            if(firstName.value.length < 9){
+            firstName.style.border = "1px solid red";
+            firstName_error.style.display = "block";
+            firstName.focus();
                return false;
             }
-            if(password.value.length < 9){
-            password.style.border = "1px solid red";
-            password_error.style.display = "block"
-            password.foucs();
+            if(lastName.value.length < 9){
+            lastName.style.border = "1px solid red";
+            lastName_error.style.display = "block";
+            lastName.focus();
             return false;
             }
-            return false;
-         }
-            var usersList = [];   
+            if (userList.length !== 0 && userList.filter(x => x.email == $("#email").val()).length !== 0) {
+                window.alert("the email" + $("#email").val() + "already exist");
+              } 
+              else 
+              {
+                user = {
+                    userId : userIdCount,
+                    firstName: $("#firstName").val(),
+                    lastName: $("#lastName").val(),
+                    email: $("#email").val(),
+                    // password: $("#password").val(),
+                    // confirmpassword: $('#confirm_password').val(), 
+                    // age : $("#age").val(),
+                    // game: [],
+                    // isAdmin : $("#admin:checked").length === 1 ? true : false
+                }
+                usersList.push(user);
+                userIdCount++;
+                console.log(usersList);
+                return false;
+            }
+            //   console.log(userList);
+              return false;
+          }
+       
             var userIdCount = 1;
             function checkPass(){
                 var pass  = document.getElementById("password").value;
