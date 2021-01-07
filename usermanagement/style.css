@@ -48,7 +48,12 @@ button:hover {
     display:none;
 }  
 .col-md-12 #firstName_error,
-.col-md-12 #lastName_error{
+.col-md-12 #lastName_error,
+.col-md-12 #email_error,
+.col-md-12 #password_error,
+.col-md-12 #ConfirmPassword_error,
+.col-md-12 #age_error
+{
     margin-top: 5px;
     width: 300px;
     font-size: 15px;
