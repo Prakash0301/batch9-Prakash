@@ -134,7 +134,7 @@
                         if(loggedInUserDetails.isAdmin){
                             $("#welcomeMessage").text("Welcome Admin " + loggedInUserDetails.firstName + " " + loggedInUserDetails.lastName);
                             for(k = 0; k < usersList.length; k++) {
-                                $("#userListTable tbody").append("<tr id='" + usersList[k].userId + "'><td class='firstNameColumn'>" + usersList[k].firstName + "</td><td class='lastNameColumn'>" + usersList[k].lastName + "</td><td class='emailColumn'>"+ usersList[k].email + "</td><td class='ageColumn'>" + usersList[k].age +"</td><td>"+
+                                $("#userListTable tbody").append("<tr id='" + usersList[k].userId + "'><td class='firstNameColumn'>" + usersList[k].firstName + "</td><td class='lastNameColumn'>" + usersList[k].lastName + "</td><td class='emailColumn'>"+ usersList[k].email + "</td><td class='passwordColumn'>" +usersList[k].password + "</td><td class='ageColumn'>" + usersList[k].age +"</td><td>"+
                                 "<a href='javascript:void(0)' onclick='openEditUserModal(this)'>Edit</a>   <a href='javascript:void(0)' onclick='deleteUser(this)'>Delete</a></td></tr>");
                             }
                         } else {
@@ -180,7 +180,9 @@
                     $("#firstNameEdit").val(userDetail[0].firstName);
                     $("#lastNameEdit").val(userDetail[0].lastName);
                     $("#emailEdit").val(userDetail[0].email);
+                    $("#passwordEdit").val(userDetail[0].password);
                     $("#ageEdit").val(userDetail[0].age);
+                     
                 }
             }
 
@@ -189,6 +191,7 @@
                 $("tr#" + selectedUserId + " .firstNameColumn").text($("#firstNameEdit").val());
                 $("tr#" + selectedUserId + " .lastNameColumn").text($("#lastNameEdit").val());
                 $("tr#" + selectedUserId + " .emailColumn").text($("#emailEdit").val());
+                $("tr#" + selectedUserId + " .passwordColumn").text($("#passwordEdit").val());
                 $("tr#" + selectedUserId + " .ageColumn").text($("#ageEdit").val());
                 var index = usersList.findIndex(function(element){
                     return element.userId == parseInt(selectedUserId);
@@ -197,6 +200,7 @@
                     usersList[index].firstName = $("#firstNameEdit").val();
                     usersList[index].lastName = $("#lastNameEdit").val();
                     usersList[index].email = $("#emailEdit").val();
+                    usersList[index].password = $("#passwordEdit").val();
                     usersList[index].age = $("#ageEdit").val();
                 } else{
                     alert("The selected user not found");
